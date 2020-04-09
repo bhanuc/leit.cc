@@ -1,0 +1,99 @@
+{
+  "name": "@staart/api",
+  "version": "2.8.0",
+  "publishConfig": {
+    "tag": "next"
+  },
+  "main": "index.js",
+  "repository": "git@github.com:staart/api.git",
+  "author": "Anand Chowdhary <mail@anandchowdhary.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "staart dev",
+    "start": "staart start",
+    "build": "staart build",
+    "eject": "staart eject",
+    "build-babel": "staart build-babel",
+    "launch": "staart launch",
+    "update": "staart update api",
+    "postinstall": "staart check",
+    "generate-docs": "staart docs",
+    "test": "jest --forceExit",
+    "snyk-protect": "snyk protect",
+    "semantic-release": "semantic-release"
+  },
+  "engines": {
+    "node": ">= 10.16.0"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    }
+  },
+  "devDependencies": {
+    "@prisma/cli": "^2.0.0-beta.1",
+    "@semantic-release/git": "^9.0.0",
+    "@types/cron": "^1.7.2",
+    "@types/fs-extra": "^8.1.0",
+    "@types/geolite2": "^2.0.0",
+    "@types/hapi__joi": "^16.0.12",
+    "@types/jest": "^25.2.1",
+    "@types/jsonwebtoken": "^8.3.9",
+    "@types/mysql": "^2.15.9",
+    "@types/node": "^13.11.1",
+    "@types/node-emoji": "^1.8.1",
+    "@types/qrcode": "^1.3.4",
+    "@types/randomcolor": "^0.5.4",
+    "@types/request": "^2.48.4",
+    "@types/signale": "^1.4.1",
+    "@types/validator": "^13.0.0",
+    "@types/yaml": "^1.2.0",
+    "dotenv": "^8.2.0",
+    "jest": "^25.3.0",
+    "semantic-release": "^17.0.4",
+    "semantic-release-gitmoji": "^1.3.3",
+    "ts-jest": "^25.3.1",
+    "typescript": "^3.8.3",
+    "yaml": "^1.8.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^2.0.0-beta.2",
+    "@sentry/node": "^5.15.4",
+    "@staart/config": "^1.0.0",
+    "@staart/disposable-email": "^2.0.2",
+    "@staart/elasticsearch": "^2.2.2",
+    "@staart/errors": "^2.1.1",
+    "@staart/mail": "^2.0.3",
+    "@staart/messages": "^2.1.2",
+    "@staart/mustache-markdown": "^3.0.2",
+    "@staart/payments": "^3.2.0",
+    "@staart/redis": "^2.2.1",
+    "@staart/scripts": "^1.13.1",
+    "@staart/server": "^2.7.0",
+    "@staart/text": "^2.2.2",
+    "@staart/validate": "^3.0.1",
+    "axios": "^0.19.2",
+    "client-oauth2": "^4.2.5",
+    "cron": "^1.8.2",
+    "fs-extra": "^9.0.0",
+    "geolite2-redist": "^1.0.5",
+    "jsonwebtoken": "^8.5.1",
+    "maxmind": "^4.1.1",
+    "mysql": "^2.18.1",
+    "node-emoji": "^1.10.0",
+    "otplib": "^12.0.1",
+    "qrcode": "^1.4.4",
+    "random-int": "^2.0.1",
+    "randomcolor": "^0.5.4",
+    "snyk": "^1.305.0",
+    "systeminformation": "^4.23.2"
+  },
+  "files": [
+    "setup"
+  ],
+  "snyk": true,
+  "staart-version": "1.3.157"
+}
